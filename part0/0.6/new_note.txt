@@ -1,0 +1,11 @@
+note over browser:
+once the summit button is clicked,
+browser will look for form data
+and it will prevent the default handling of form submit
+and update the local notes on browser
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over browser:
+browser make post request that contains form data to let server update
+end note
+server-->browser: 201, do nothing
